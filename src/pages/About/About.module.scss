@@ -1,0 +1,22 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 7.1875rem;
+
+  .presentation {
+    h1 {
+      color: var(--dark-50);
+      font-size: 2.25rem;
+      font-weight: 700;
+      max-width: 10ch;
+    }
+
+    p {
+      margin: 18px 0 35px 0;
+      color: var(--dark-40);
+      font-size: 1.125rem;
+      font-weight: 500;
+    }
+  }
+}

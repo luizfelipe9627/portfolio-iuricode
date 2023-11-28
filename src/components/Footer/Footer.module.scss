@@ -1,0 +1,43 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  .year {
+    color: var(--dark-50);
+  }
+
+  .copy {
+    display: flex;
+    gap: 20px;
+
+    .creator {
+      display: flex;
+      align-items: center;
+
+      &:first-child {
+        border-right: 2px solid var(--dark-40);
+        padding-right: 20px;
+      }
+
+      img {
+        width: 24px;
+        margin-right: 8px;
+      }
+
+      .paragraph {
+        color: var(--dark-50);
+        a {
+          color: var(--brand-color);
+          transition: text-decoration 0.2s ease-in-out;
+          font-weight: 700;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import syles from './Services.module.scss'
 
 const Services = () => {
   return (

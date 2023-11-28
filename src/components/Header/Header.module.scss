@@ -1,0 +1,35 @@
+.header {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2.1875rem;
+
+    .logo {
+      color: var(--dark-50);
+      font-size: 1.625rem;
+      font-weight: 700;
+    }
+
+    .list {
+      display: flex;
+      gap: 2.8125rem;
+
+      a {
+        color: var(--dark-50);
+        font-size: 1.125rem;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: var(--brand-color);
+          text-decoration: underline;
+        }
+      }
+
+      :global(.active) {
+        color: var(--brand-color);
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}

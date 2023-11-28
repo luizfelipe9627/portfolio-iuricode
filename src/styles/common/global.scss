@@ -9,3 +9,8 @@ header, main {
 footer {
   background-color: var(--dark-20);
 }
+
+.container {
+  max-width: 80vw;
+  margin: 0 auto;
+}
