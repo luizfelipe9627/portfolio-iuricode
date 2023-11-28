@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url("../font/DMSans-Regular.ttf") format("truetype"),
+    url("../font/DMSans-Medium.ttf") format("truetype"),
+    url("../font/DMSans-Bold.ttf") format("truetype");
+}
+
+:root {
+  --main-font: "DM Sans";
+  --brand-color: #00df5e;
+  --dark-10: #171717;
+  --dark-20: #212121;
+  --dark-30: #333333;
+  --dark-40: #828282;
+  --dark-50: #f9f9f9;
+}
