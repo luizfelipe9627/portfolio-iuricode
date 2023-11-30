@@ -1,0 +1,20 @@
+.skillCard {
+  display: flex;
+  justify-content: center;
+  padding: 35px;
+  background-color: var(--dark-20);
+  border: 1px solid var(--dark-30);
+
+  img {
+    max-width: 80px;
+  }
+
+  &:hover {
+    background-color: var(--dark-30);
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 900px) {
+    padding: 21px;
+  }
+}

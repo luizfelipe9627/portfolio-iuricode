@@ -1,98 +1,59 @@
-.introduction {
-  min-height: calc(100vh - 104px);
-  display: flex;
+.about {
+  padding: 56px 0;
+
+  @media (max-width: 768px) {
+    max-width: 90vw;
+  }
 
   .wrapper {
-    width: 100vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 
-    h1 {
-      color: var(--dark-50);
-      font-size: 36px;
-      font-weight: 700;
-      max-width: 10ch;
-    }
+    .content {
+      max-width: 70vw;
+      margin-bottom: 44px;
 
-    p {
-      margin: 18px 0 35px 0;
-      color: var(--dark-40);
-      font-size: 18px;
-      font-weight: 500;
-    }
-  }
-
-  .buttons {
-    display: flex;
-    gap: 15px;
-
-    a {
-      transition: all 0.3s ease-in-out;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 500;
-    }
-
-    .primary {
-      a {
-        padding: 12px 27px;
-        color: var(--dark-10);
-        background-color: var(--brand-color);
-
-        &:hover {
-          background-color: #64ff8b;
-          color: var(--dark-10);
-        }
+      @media (max-width: 768px) {
+        margin-bottom: 44px;
+        max-width: 80vw;
       }
-    }
 
-    .secondary {
-      background: transparent;
-      a {
-        padding: 12px 18px;
+      .title {
+        text-align: center;
+        margin-bottom: 30px;
         color: var(--dark-50);
-        padding: 12px 18px;
-        border: 1px solid var(--dark-30);
+        font-size: 32px;
+        font-weight: 700;
 
-        &:hover {
-          background-color: var(--dark-30);
-          color: var(--dark-50);
+        @media (max-width: 768px) {
+          margin-bottom: 14px;
         }
       }
-    }
-  }
-}
 
-.about {
-  margin-bottom: 130px;
-  max-width: 55vw;
-
-  .infos {
-    display: flex;
-    justify-content: center;
-
-    .title {
-      text-align: center;
-      margin-bottom: 30px;
-      color: var(--dark-50);
-      font-size: 32px;
-      font-weight: 700;
-    }
-
-    .description {
-      color: var(--dark-40);
-      text-align: center;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 32px;
-      margin-bottom: 85px;
+      .description {
+        margin-bottom: 12px;
+        color: var(--dark-40);
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+      }
     }
   }
 
   .contact {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
 
     .item {
       display: flex;

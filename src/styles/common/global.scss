@@ -2,6 +2,10 @@
   font-family: var(--main-font);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header,
 main {
   background-color: var(--dark-10);
@@ -11,6 +15,11 @@ main {
   padding-top: 104px;
 }
 
+section {
+  min-height: calc(100vh - 165px);
+  padding: 56px 0;
+}
+
 footer {
   background-color: var(--dark-20);
 }
@@ -18,18 +27,6 @@ footer {
 .container {
   max-width: 80vw;
   margin: 0 auto;
-}
-
-.App {
-  display: flex;
-  flex-direction: column;
-  /* Faz o calculo pegando a altura total da tela mais a altura do footer para a altura. */
-  min-height: calc(100vh + 64px);
-}
-
-.AppBody {
-  /* O flex 1 faz com que o footer fique sempre no final da página. */
-  flex: 1;
 }
 
 .animeBottom {

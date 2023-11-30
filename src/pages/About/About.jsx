@@ -1,111 +1,65 @@
 import React from "react";
 import styles from "./About.module.scss";
-import Illustration from "../../assets/illustration.svg";
-import Smile from "../../assets/smile.svg";
-import Email from "../../assets/email.svg";
-import Linkedin from "../../assets/linkedin.svg";
-import Phone from "../../assets/phone.svg";
+import Smile from "../../assets/svg/smile.svg";
+import Email from "../../assets/svg/email.svg";
+import Linkedin from "../../assets/svg/linkedin.svg";
+import Phone from "../../assets/svg/phone.svg";
+import ContactInfo from "../../components/ContactInfo/ContactInfo";
+import Title from "../../components/Title/Title";
 
 const About = () => {
   return (
     <>
-      <section className={`${styles.introduction} container animeBottom`}>
-        <div className={styles.wrapper}>
-          <div className={styles.presentation}>
-            <h1>Olá, eu sou o Luiz Felipe Silva :)</h1>
-            <p>Desenvolvedor Front-End</p>
-
-            <div className={styles.buttons}>
-              <button className={styles.primary}>
-                <a href="#">Download CV</a>
-              </button>
-              <button className={styles.secondary}>
-                <a
-                  href="mailto:felipesilva9627@hotmail.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Entrar em contato
-                </a>
-              </button>
-            </div>
-          </div>
-
-          <div className={styles.vector}>
-            <img src={Illustration} alt="Ilustração" />
-          </div>
-        </div>
-      </section>
-
       <section className={`${styles.about} container animeBottom`}>
-        <div className={styles.infos}>
-          <div>
-            <h1 className={styles.title}>Sobre mim</h1>
+        <div className={styles.wrapper}>
+          <Title>Sobre mim</Title>
+
+          <div className={styles.content}>
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident
+              Sou um desenvolvedor web front-end com experiência na criação de
+              interfaces de usuário atraentes e funcionais. Ao longo dos anos,
+              adquiri habilidades sólidas em tecnologias atuais. Estou sempre
+              buscando aprender e implementar as melhores práticas no
+              desenvolvimento web para criar experiências de usuário
+              excepcionais.
+            </p>
+            <p className={styles.description}>
+              Tenho dedicado os últimos dois anos ao estudo e prática em
+              desenvolvimento web front-end. Possuo especialização na criação de
+              landing pages funcionais, utilizando as tecnologias mais
+              atualizadas disponíveis no mercado.
             </p>
           </div>
         </div>
 
         <div className={styles.contact}>
-          <div className={styles.item}>
-            <span>
-              <img src={Smile} alt="Carinha sorridente" />
-            </span>
-
-            <h1>Meu nome</h1>
-            <p>Luiz Felipe Silva</p>
-          </div>
-
-          <div className={styles.item}>
-            <span>
-              <img src={Email} alt="Envelope" />
-            </span>
-
-            <h1>E-mail</h1>
-            <a
-              href="mailto:felipesilva9627@hotmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              felipesilva9627@hotmail.com
-            </a>
-          </div>
-
-          <div className={styles.item}>
-            <span>
-              <img src={Linkedin} alt="Linkedin" />
-            </span>
-
-            <h1>Linkedin</h1>
-            <a
-              href="https://www.linkedin.com/in/luizfelipe9627"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @luizfelipe9627
-            </a>
-          </div>
-
-          <div className={styles.item}>
-            <span>
-              <img src={Phone} alt="Telefone" />
-            </span>
-
-            <h1>Telefone</h1>
-            <a
-              href="tel:5511952353969"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              (11) 95235-3969
-            </a>
-          </div>
+          <ContactInfo
+            srcImg={Smile}
+            altImg="Carinha sorridente"
+            title="Meu nome"
+            subtitle="Luiz Felipe Silva"
+          />
+          <ContactInfo
+            srcImg={Email}
+            altImg="Envelope"
+            aHref="mailto:felipesilva9627@hotmail.com"
+            title="E-mail"
+            subtitle="felipesilva9627@hotmail.com"
+          />
+          <ContactInfo
+            srcImg={Linkedin}
+            altImg="Linkedin"
+            aHref="https://www.linkedin.com/in/luizfelipe9627"
+            title="Linkedin"
+            subtitle="@luizfelipe9627"
+          />
+          <ContactInfo
+            srcImg={Phone}
+            altImg="Telefone"
+            aHref="tel:5511952353969"
+            title="Telefone"
+            subtitle="(11) 95235-3969"
+          />
         </div>
       </section>
     </>

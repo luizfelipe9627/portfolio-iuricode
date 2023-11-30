@@ -1,0 +1,37 @@
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    padding: 15px;
+    border-radius: 50%;
+    background-color: var(--dark-20);
+    margin-bottom: 19px;
+
+    &:hover {
+      background-color: var(--dark-30);
+    }
+  }
+
+  h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark-50);
+    margin-bottom: 5px;
+  }
+
+  a {
+    color: var(--dark-40);
+
+    &:hover {
+      color: var(--brand-color);
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    color: var(--dark-40);
+  }
+}

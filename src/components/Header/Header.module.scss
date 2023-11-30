@@ -38,7 +38,7 @@
         }
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 900px) {
         [data-menu="button"] {
           height: 100%;
           display: flex;
@@ -87,16 +87,23 @@
         }
 
         ul {
+          opacity: 0;
           width: 100%;
           padding: 16px;
           gap: 32px;
-          display: flex;
           justify-content: space-evenly;
           flex-direction: column;
           position: absolute;
           right: 0;
           background-color: var(--dark-20);
           top: 104px;
+          transition: all 0.5s ease-in-out;
+          pointer-events: none;
+
+          &.open {
+            opacity: 1;
+            pointer-events: initial;
+          }
 
           li {
             margin-left: 0;

@@ -1,0 +1,31 @@
+.projectCard {
+  padding: 20px 25px;
+  background-color: var(--dark-20);
+  border: 1px solid var(--dark-30);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    border: 1px solid var(--dark-30);
+    box-shadow: 0 0 0 1px var(--dark-20), 0 0 4px 0 var(--dark-40);
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    max-height: 130px;
+  }
+
+  h1 {
+    margin: 23px 0 6px 0;
+    color: var(--dark-50);
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  span {
+    color: var(--dark-40);
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
