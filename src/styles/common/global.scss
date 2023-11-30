@@ -2,7 +2,8 @@
   font-family: var(--main-font);
 }
 
-header, main {
+header,
+main {
   background-color: var(--dark-10);
 }
 
@@ -13,4 +14,29 @@ footer {
 .container {
   max-width: 80vw;
   margin: 0 auto;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  /* Faz o calculo pegando a altura total da tela mais a altura do footer para a altura. */
+  min-height: calc(100vh + 64px);
+}
+
+.AppBody {
+  /* O flex 1 faz com que o footer fique sempre no final da página. */
+  flex: 1;
+}
+
+.animeBottom {
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: animeBottom 1.2s forwards;
+}
+
+@keyframes animeBottom {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
