@@ -4,7 +4,6 @@
   left: 0;
   width: 100%;
   z-index: 999;
-  position: relative;
 
   .wrapper {
     display: flex;
@@ -90,7 +89,7 @@
           opacity: 0;
           gap: 32px;
           width: 100%;
-          height: calc(100dvh - 104px);
+          height: calc(100vh - 104px);
           justify-content: space-evenly;
           flex-direction: column;
           position: absolute;

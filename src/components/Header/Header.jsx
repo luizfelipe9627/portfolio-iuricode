@@ -18,6 +18,8 @@ const Header = () => {
   function handleClickList() {
     setMobileMenu(false); // Altera o estado do mobileMenu para false.
     window.scrollTo({ top: 0, behavior: "smooth" }); // Faz o scroll da página para o topo.
+
+    document.body.style.overflow = "initial"; // O scroll da página é liberado.
   }
 
   return (
