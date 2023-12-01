@@ -7,6 +7,12 @@ const Header = () => {
 
   function handleClickMenu() {
     setMobileMenu(!mobileMenu); // Altera o estado do mobileMenu para o contrário do seu valor atual.
+
+    if (mobileMenu) {
+      document.body.style.overflow = "initial"; // O scroll da página é liberado.
+    } else {
+      document.body.style.overflow = "hidden"; // O scroll da página é bloqueado.
+    }
   }
 
   function handleClickList() {
@@ -37,31 +43,25 @@ const Header = () => {
             </label>
           </div>
 
-          <div
-            className="containerNav"
-            data-menu="smooth"
-            aria-expanded="false"
-          >
-            <nav className={styles.nav}>
-              <ul className={`${styles.list} ${mobileMenu ? styles.open : ""}`}>
-                <li onClick={handleClickList}>
-                  <NavLink to="/">Início</NavLink>
-                </li>
-                <li onClick={handleClickList}>
-                  <NavLink to="/about">Sobre mim</NavLink>
-                </li>
-                <li onClick={handleClickList}>
-                  <NavLink to="/projects">Projetos</NavLink>
-                </li>
-                <li onClick={handleClickList}>
-                  <NavLink to="/services">Serviços</NavLink>
-                </li>
-                <li onClick={handleClickList}>
-                  <NavLink to="/skills">Minhas skills</NavLink>
-                </li>
-              </ul>
-            </nav>
-          </div>
+          <nav className={styles.nav}>
+            <ul className={`${mobileMenu ? styles.open : ""}`}>
+              <li onClick={handleClickList}>
+                <NavLink to="/">Início</NavLink>
+              </li>
+              <li onClick={handleClickList}>
+                <NavLink to="/about">Sobre mim</NavLink>
+              </li>
+              <li onClick={handleClickList}>
+                <NavLink to="/projects">Projetos</NavLink>
+              </li>
+              <li onClick={handleClickList}>
+                <NavLink to="/services">Serviços</NavLink>
+              </li>
+              <li onClick={handleClickList}>
+                <NavLink to="/skills">Minhas skills</NavLink>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>

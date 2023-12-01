@@ -4,9 +4,9 @@
   left: 0;
   width: 100%;
   z-index: 999;
+  position: relative;
 
   .wrapper {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -88,13 +88,15 @@
 
         ul {
           opacity: 0;
-          width: 100%;
-          padding: 16px;
           gap: 32px;
+          width: 100%;
+          height: calc(100dvh - 104px);
           justify-content: space-evenly;
           flex-direction: column;
           position: absolute;
           right: 0;
+          text-align: center;
+          border: 1px solid var(--dark-30);
           background-color: var(--dark-20);
           top: 104px;
           transition: all 0.5s ease-in-out;
@@ -109,14 +111,8 @@
             margin-left: 0;
 
             a {
-              font-size: 0.9375rem;
+              font-size: 24px;
               height: 3.75rem;
-            }
-
-            .active {
-              height: auto;
-              display: block;
-              border-bottom: none;
             }
           }
         }
