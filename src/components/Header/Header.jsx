@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={`${styles.wrapper} container`}>
-        <Link to="/">
+        <Link to="/" onClick={handleClickList}>
           <h1 className={styles.logo}>Portfólio</h1>
         </Link>
 

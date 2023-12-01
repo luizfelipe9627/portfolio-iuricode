@@ -22,6 +22,7 @@
     padding: 30px;
     gap: 40px;
     transition: all 0.3s ease;
+    height: 100%;
 
     &:hover {
       background-color: var(--dark-30);
@@ -37,7 +38,6 @@
       color: var(--dark-40);
       font-size: 20px;
       font-weight: 500;
-      max-width: 10ch;
       transition: color 0.3s ease;
     }
 
