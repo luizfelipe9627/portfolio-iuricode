@@ -22,7 +22,7 @@
     }
 
     @media (max-width: 768px) {
-      flex-direction: column;
+      flex-direction: column-reverse;
       justify-content: center;
       text-align: center;
 
@@ -31,7 +31,7 @@
       }
 
       .vector {
-        display: none;
+        margin-bottom: 64px;
       }
     }
 
