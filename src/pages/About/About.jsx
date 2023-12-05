@@ -3,7 +3,7 @@ import styles from "./About.module.scss";
 import Smile from "../../assets/svg/smile.svg";
 import Email from "../../assets/svg/email.svg";
 import Linkedin from "../../assets/svg/linkedin.svg";
-import Phone from "../../assets/svg/phone.svg";
+import Telephone from "../../assets/svg/telephone.svg";
 import ContactInfo from "../../components/ContactInfo/ContactInfo";
 import Title from "../../components/Title/Title";
 
@@ -54,7 +54,7 @@ const About = () => {
             subtitle="@luizfelipe9627"
           />
           <ContactInfo
-            srcImg={Phone}
+            srcImg={Telephone}
             altImg="Telefone"
             aHref="tel:5511952353969"
             title="Telefone"
