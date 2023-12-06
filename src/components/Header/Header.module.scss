@@ -19,6 +19,7 @@
       ul {
         display: flex;
         gap: 45px;
+        padding: 10px;
 
         a {
           color: var(--dark-50);
@@ -26,14 +27,31 @@
           transition: all 0.2s ease-in-out;
 
           &:hover {
-            color: var(--brand-color);
-            text-decoration: underline;
+            &::after {
+              content: "";
+              display: block;
+              height: 2px;
+              width: 0;
+              background-color: var(--brand-color);
+              transition: width 0.3s ease-in-out;
+              animation: expandWidth 1s ease-in-out forwards;
+              border-radius: 2px;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra com 90% da largura */
+            }
           }
         }
 
         :global(.active) {
           color: var(--brand-color);
           transition: all 0.2s ease-in-out;
+
+          &::after {
+            content: "";
+            display: block;
+            height: 2px;
+            background-color: var(--brand-color);
+            border-radius: 2px;
+          }
         }
       }
 
@@ -86,6 +104,8 @@
         }
 
         ul {
+          display: flex;
+          align-items: center;
           opacity: 0;
           gap: 0;
           width: 100%;
@@ -107,7 +127,7 @@
           }
 
           li {
-            margin-left: 0;
+            width: max-content;
 
             a {
               font-size: 24px;
@@ -123,5 +143,14 @@
       font-size: 1.625rem;
       font-weight: 700;
     }
+  }
+}
+
+@keyframes expandWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
