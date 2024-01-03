@@ -38,7 +38,7 @@ const Projects = () => {
           techs="HTML5, CSS3, JAVASCRIPT, WEBPACK, BABEL"
         />
         <ProjectCard
-          aHref="https://luizfelipe9627-bikcraft-2.netlify.app"
+          aHref="https://luizfelipe9627-bikcraft2.netlify.app"
           img={Bikcraft}
           title="Bikcraft"
           techs="HTML5, CSS3, JAVASCRIPT"
@@ -50,9 +50,9 @@ const Projects = () => {
           techs="REACT.JS, STYLED COMPONENTS"
         />
         <ProjectCard
-          aHref="https://luizfelipe9627-calculadora-vnw.netlify.app"
+          aHref="https://luizfelipe9627-calculadora-rocketseat.netlify.app"
           img={Calculadora}
-          title="Calculadora"
+          title="Calculadora Rocketseat"
           techs="REACT.JS, STYLED COMPONENTS"
         />
         <ProjectCard
@@ -146,7 +146,7 @@ const Projects = () => {
           techs="HTML5, CSS3, JAVASCRIPT"
         />
         <ProjectCard
-          aHref="https://luizfelipe9627-tourist-attractions-m3.netlify.app"
+          aHref="https://luizfelipe9627-tourist-attractions.netlify.app"
           img={TouristAttractions}
           title="Tourist Attractions"
           techs="HTML5, SASS, JAVASCRIPT, GULP"
