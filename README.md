@@ -12,7 +12,7 @@ Desenvolvi esse portfólio para o desafio final do Vai na Web, que consistia em 
 
 ## 🎨 Layout
 
-### Créditos do layout para o <a href="https://www.iuricode.com">Iuri Code</a>.
+Créditos do layout para o <a href="https://www.iuricode.com">Iuri Code</a>.
 
 ## 💻 Tecnologias utilizadas
 
